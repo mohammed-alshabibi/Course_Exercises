@@ -63,10 +63,13 @@
             //float price;
             //Console.WriteLine("Enter the price of the item: ");
             //price = float.Parse(Console.ReadLine());
+            //float discount;
+            //float finalPrice;
             //if ( price > 100)
             //{
-            //    price = price * 10 / 100;
-            //    Console.WriteLine("The discount is 10% and the price after discount is: " + price);
+            //    discount = price * 10 / 100;
+            //    finalPrice = price - discount;
+            //    Console.WriteLine("The discount is 10% and the price after discount is: " + finalPrice);
             //}
             //else
             //{

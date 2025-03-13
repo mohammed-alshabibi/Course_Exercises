@@ -58,6 +58,7 @@
             //F = (C * 9 / 5) -32 ;
             //Console.Write("The temperature in Fahrenheit is: " + F);
 
+
             //----------------------------------------------------------
             //4. Simple Discount Calculator
             //float price;
@@ -116,6 +117,7 @@
             //temp = num1;
             //num1 = num2;
             //num2 = temp;
+
 
 
             //Console.Write("number 2 after swap is " +num2);

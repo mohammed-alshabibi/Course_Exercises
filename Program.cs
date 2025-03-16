@@ -1,4 +1,6 @@
-﻿namespace Part1Exs
+﻿using System.Reflection.Metadata;
+
+namespace Part1Exs
 {
     internal class Program
     {
@@ -224,40 +226,76 @@
             //}
 
             //-----------------------Basic ATM System-----------------------
-            double balance = 1000;
-            Console.WriteLine("Welcome to the ATM");
-            
-            Console.WriteLine("1. Withdraw Money ");
-            Console.WriteLine("2. Deposit Money ");
-            Console.WriteLine("3. Check Balance ");
-            Console.WriteLine("4. Exit ");
+            //double balance = 1000;
+            //Console.WriteLine("Welcome to the ATM");
+
+            //Console.WriteLine("1. Withdraw Money ");
+            //Console.WriteLine("2. Deposit Money ");
+            //Console.WriteLine("3. Check Balance ");
+            //Console.WriteLine("4. Exit ");
+            //int option = int.Parse(Console.ReadLine());
+            //switch (option)
+            //{
+            //    case 1:
+            //        double withdraw = double.Parse(Console.ReadLine());
+            //        if (balance <= 0 && withdraw > bakance )
+            //        {
+            //            Console.WriteLine("the process anavilable");
+            //            break;
+            //        }
+            //        Console.WriteLine("Enter the amount to withdraw money: ");
+            //        
+            //        balance -= withdraw;
+            //        Console.WriteLine("The new balance is: " + balance);
+            //        break;
+            //    case 2:
+            //        Console.WriteLine("Enter the amount to deposit money: ");
+            //        double deposit = double.Parse(Console.ReadLine());
+            //        balance += deposit;
+            //        Console.WriteLine("The new balance is: " + balance);
+            //        break;
+            //    case 3:
+            //        Console.WriteLine("The balance is: " + balance);
+            //        break;
+            //    case 4:
+            //        Console.WriteLine("Thank you for using the ATM");
+            //        break;
+            //}
+            //-------------------------- Geometry Calculator-----------------------
+            Console.WriteLine("choose a chape:");
+            Console.WriteLine("1. Circle (Calculate Area & Circumference) ");
+            Console.WriteLine("2. Square(Calculate Area & Perimeter)");
+            Console.WriteLine("3. Triangle (Calculate Area)");
             int option = int.Parse(Console.ReadLine());
             switch (option)
             {
                 case 1:
-                    if (balance <= 0)
-                    {
-                        Console.WriteLine("The balance is zero");
-                        break;
-                    }
-                    Console.WriteLine("Enter the amount to withdraw money: ");
-                    double withdraw = double.Parse(Console.ReadLine());
-                    balance -= withdraw;
-                    Console.WriteLine("The new balance is: " + balance);
+                    Console.WriteLine("Enter the radius of the circle: ");
+                    double radius = double.Parse(Console.ReadLine());
+                    double area = 3.14 * radius * radius;
+                    double circumference = 2 * 3.14 * radius;
+                    Console.WriteLine("The area of the circle is: " + area);
+                    Console.WriteLine("The circumference of the circle is: " + circumference);
                     break;
                 case 2:
-                    Console.WriteLine("Enter the amount to deposit money: ");
-                    double deposit = double.Parse(Console.ReadLine());
-                    balance += deposit;
-                    Console.WriteLine("The new balance is: " + balance);
+                    Console.WriteLine("Enter the side of the square: ");
+                    double side = double.Parse(Console.ReadLine());
+                    double areaSquare = side * side;
+                    double perimeter = 4 * side;
+                    Console.WriteLine("The area of the square is: " + areaSquare);
+                    Console.WriteLine("The perimeter of the square is: " + perimeter);
                     break;
                 case 3:
-                    Console.WriteLine("The balance is: " + balance);
-                    break;
-                case 4:
-                    Console.WriteLine("Thank you for using the ATM");
+                    Console.WriteLine("Enter the base of the triangle: ");
+                    double baseTriangle = double.Parse(Console.ReadLine());
+                    Console.WriteLine("Enter the height of the triangle: ");
+                    double height = double.Parse(Console.ReadLine());
+                    double areaTriangle = 0.5 * baseTriangle * height;
+                    Console.WriteLine("The area of the triangle is: " + areaTriangle);
                     break;
             }
-        }
+
+
+            }
     }
 }

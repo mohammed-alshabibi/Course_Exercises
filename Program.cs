@@ -364,12 +364,25 @@ namespace Part1Exs
             //        break;
             //}
             //-------------------------- Print Pattern (For Loop)-------------------
-            Console.WriteLine("Enter number of N:");
-            int n=int.Parse(Console.ReadLine());
-            for (int i = 0; i <= n; i++) {
+            //Console.WriteLine("Enter number of N:");
+            //int n=int.Parse(Console.ReadLine());
+            //for (int i = 0; i <= n; i++) {
 
-                Console.WriteLine(new string('*', i));
-                
+            //    Console.WriteLine(new string('*', i));
+
+            //}
+            //--------------------------Print a Pyramid Pattern (For Loop)---------
+            Console.WriteLine("Enter number of N:");
+            int n = int.Parse(Console.ReadLine());
+            int row =0;
+            for (int i = 1; i <= n; i++)
+            {
+                for (int j = 0; j < n - i; j++)
+                {
+                    Console.Write(" ");
+                }
+                Console.WriteLine(new string('*', i*2-1));
+
             }
 
 

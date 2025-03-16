@@ -21,29 +21,29 @@
 
             //---------------------------------------
             //2. Largest of Three Numbers 
-            int num1, num2, num3;
-            Console.WriteLine("Enter the first number: ");
-            num1 = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter the second number: ");
-            num2 = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter the third number: ");
-            num3 = int.Parse(Console.ReadLine());
-            if(num1 > num2 & num1 > num3)
-            {
-                Console.WriteLine("The largest number is: " + num1);
-            }
-            else if (num2 > num1 & num2 > num3)
-            {
-                Console.WriteLine("The largest number is: " + num2);
-            }
-            else if (num3 > num1 & num3 > num2)
-            {
-                Console.WriteLine("The largest number is: " + num3);
-            }
-            else
-            {
-                Console.WriteLine("The numbers are equal");
-            }
+            //int num1, num2, num3;
+            //Console.WriteLine("Enter the first number: ");
+            //num1 = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter the second number: ");
+            //num2 = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter the third number: ");
+            //num3 = int.Parse(Console.ReadLine());
+            //if(num1 > num2 & num1 > num3)
+            //{
+            //    Console.WriteLine("The largest number is: " + num1);
+            //}
+            //else if (num2 > num1 & num2 > num3)
+            //{
+            //    Console.WriteLine("The largest number is: " + num2);
+            //}
+            //else if (num3 > num1 & num3 > num2)
+            //{
+            //    Console.WriteLine("The largest number is: " + num3);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("The numbers are equal");
+            //}
 
             //----------------------------------------------------------
             //3. Temperature Converter
@@ -192,6 +192,36 @@
             //{
             //    Console.WriteLine("Invalid operation");
             //}
+            //--------------------------- Simple Calculator (Switch-Case) ----------------
+            Console.WriteLine("Enter the first number: ");
+            int num1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the second number: ");
+            int num2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the operation: ");
+            char operation = char.Parse(Console.ReadLine());
+            switch(operation)
+            {
+                case '+':
+                    Console.WriteLine("The sum is: " + (num1 + num2));
+                    break;
+                case '-':
+                    Console.WriteLine("The difference is: " + (num1 - num2));
+                    break;
+                case '*':
+                    Console.WriteLine("The product is: " + (num1 * num2));
+                    break;
+                case '/':
+                    if (num2 == 0)
+                    {
+                        Console.WriteLine("Cannot divide by zero");
+                        break;
+                    }
+                    Console.WriteLine("The quotient is: " + (num1 / num2));
+                    break;
+                default:
+                    Console.WriteLine("Invalid operation");
+                    break;
+            }
         }
     }
 }

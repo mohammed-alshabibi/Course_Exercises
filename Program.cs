@@ -372,17 +372,60 @@ namespace Part1Exs
 
             //}
             //--------------------------Print a Pyramid Pattern (For Loop)---------
-            Console.WriteLine("Enter number of N:");
-            int n = int.Parse(Console.ReadLine());
-            int row =0;
-            for (int i = 1; i <= n; i++)
-            {
-                for (int j = 0; j < n - i; j++)
-                {
-                    Console.Write(" ");
-                }
-                Console.WriteLine(new string('*', i*2-1));
+            //Console.WriteLine("Enter number of N:");
+            //int n = int.Parse(Console.ReadLine());
 
+            //for (int i = 1; i <= n; i++)
+            //{
+            //    for (int j = 0; j < n - i; j++)
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    Console.WriteLine(new string('*', i * 2 - 1));
+
+            //}
+            //--------------------------Print a Diamond Pattern (For Loop)---------------
+            //Console.WriteLine("Enter number of N:");
+            //int n = int.Parse(Console.ReadLine());
+            //for (int i = 1; i <= n; i++)
+            //{
+            //    for (int j = 0; j < n - i; j++)
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    Console.WriteLine(new string('*', i * 2 - 1));
+
+            //}
+            //----------------------------Guess Game with helper ---------------
+            Random random = new Random();
+            int randomNumber = random.Next(1, 100);
+            
+            int attempts = 0;
+            bool correct = false;
+            while (!correct)
+            {
+                Console.WriteLine("Guess a number between 1 and 100: ");
+                int guess = int.Parse(Console.ReadLine());
+                
+                if (randomNumber  <guess)
+                {
+                    Console.WriteLine("try lower");
+                    
+                    attempts++;
+
+
+                }
+                else if (randomNumber > guess)
+                {
+                    Console.WriteLine("try higher");
+                    attempts++;
+                }
+                else
+                {
+                    Console.WriteLine("Correct! The number was " + randomNumber);
+                    Console.WriteLine("It took you " + attempts + " attempts");
+                    correct = true;
+                }
             }
 
 

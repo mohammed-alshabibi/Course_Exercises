@@ -226,41 +226,68 @@ namespace Part1Exs
             //}
 
             //-----------------------Basic ATM System-----------------------
-            //double balance = 1000;
-            //Console.WriteLine("Welcome to the ATM");
+            char choice;
+            double balance = 1000;
+            bool isActive = false;
+            Console.WriteLine("Welcome to the ATM");
+            do
+            {
 
-            //Console.WriteLine("1. Withdraw Money ");
-            //Console.WriteLine("2. Deposit Money ");
-            //Console.WriteLine("3. Check Balance ");
-            //Console.WriteLine("4. Exit ");
-            //int option = int.Parse(Console.ReadLine());
-            //switch (option)
-            //{
-            //    case 1:
-            //        double withdraw = double.Parse(Console.ReadLine());
-            //        if (balance <= 0 && withdraw > bakance )
-            //        {
-            //            Console.WriteLine("the process anavilable");
-            //            break;
-            //        }
-            //        Console.WriteLine("Enter the amount to withdraw money: ");
-            //        
-            //        balance -= withdraw;
-            //        Console.WriteLine("The new balance is: " + balance);
-            //        break;
-            //    case 2:
-            //        Console.WriteLine("Enter the amount to deposit money: ");
-            //        double deposit = double.Parse(Console.ReadLine());
-            //        balance += deposit;
-            //        Console.WriteLine("The new balance is: " + balance);
-            //        break;
-            //    case 3:
-            //        Console.WriteLine("The balance is: " + balance);
-            //        break;
-            //    case 4:
-            //        Console.WriteLine("Thank you for using the ATM");
-            //        break;
-            //}
+                Console.WriteLine("1. Withdraw Money ");
+                Console.WriteLine("2. Deposit Money ");
+                Console.WriteLine("3. Check Balance ");
+                Console.WriteLine("4. Exit ");
+                int option = int.Parse(Console.ReadLine());
+                switch (option)
+                {
+                    case 1:
+                        double withdraw = double.Parse(Console.ReadLine());
+                        if (balance <= 0 && withdraw > balance)
+                        {
+                            Console.WriteLine("the process anavilable");
+                            isActive = true;
+                            break;
+                        }else
+                            Console.WriteLine("Enter the amount to withdraw money: ");
+
+                        balance -= withdraw;
+                        
+                        break;
+                    case 2:
+                        Console.WriteLine("Enter the amount to deposit money: ");
+                        double deposit = double.Parse(Console.ReadLine());
+                        balance += deposit;
+                        
+                        break;
+                    case 3:
+                        
+                        break;
+                    case 4:
+                        Console.WriteLine("Thank you for using the ATM");
+                        isActive = true;
+                        break;
+
+                    default:
+                        Console.WriteLine("Invalid option");
+                        isActive = true;
+                        break;
+                    
+                }
+                if (!isActive)
+                {
+                    Console.WriteLine("The balance is: " + balance);
+                }
+                Console.WriteLine("Do you want another operation ? y / n");
+                choice = Console.ReadKey().KeyChar;
+            }
+
+            while (choice == 'y' || choice == 'Y');
+
+            Console.WriteLine("\ngood bye");
+        }
+            
+            
+            
             //-------------------------- Geometry Calculator-----------------------
             //Console.WriteLine("choose a chape:");
             //Console.WriteLine("1. Circle (Calculate Area & Circumference) ");
@@ -385,19 +412,19 @@ namespace Part1Exs
 
             //}
             //--------------------------Print a Diamond Pattern (For Loop)---------------
-            Console.WriteLine("Enter number of N:");
-            int n = int.Parse(Console.ReadLine());
-            for (int i = 1; i <= n; i++)
-            {
+            //Console.WriteLine("Enter number of N:");
+            //int n = int.Parse(Console.ReadLine());
+            //for (int i = 1; i <= n; i++)
+            //{
                 
-                Console.WriteLine(new string(' ', n-i) + new string('*', i * 2 - 1));
+            //    Console.WriteLine(new string(' ', n-i) + new string('*', i * 2 - 1));
 
 
-            }
-            for (int i = n - 1; i >= 1; i--)
-            {
-                Console.WriteLine(new string(' ', n - i) + new string('*', i * 2 - 1));
-            }
+            //}
+            //for (int i = n - 1; i >= 1; i--)
+            //{
+            //    Console.WriteLine(new string(' ', n - i) + new string('*', i * 2 - 1));
+            //}
             //----------------------------Guess Game with helper ---------------
             //Random random = new Random();
             //int randomNumber = random.Next(1, 100);
@@ -433,4 +460,4 @@ namespace Part1Exs
 
         }
     }
-}
+

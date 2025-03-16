@@ -193,33 +193,69 @@
             //    Console.WriteLine("Invalid operation");
             //}
             //--------------------------- Simple Calculator (Switch-Case) ----------------
-            Console.WriteLine("Enter the first number: ");
-            int num1 = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter the second number: ");
-            int num2 = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter the operation: ");
-            char operation = char.Parse(Console.ReadLine());
-            switch(operation)
+            //Console.WriteLine("Enter the first number: ");
+            //int num1 = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter the second number: ");
+            //int num2 = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter the operation: ");
+            //char operation = char.Parse(Console.ReadLine());
+            //switch(operation)
+            //{
+            //    case '+':
+            //        Console.WriteLine("The sum is: " + (num1 + num2));
+            //        break;
+            //    case '-':
+            //        Console.WriteLine("The difference is: " + (num1 - num2));
+            //        break;
+            //    case '*':
+            //        Console.WriteLine("The product is: " + (num1 * num2));
+            //        break;
+            //    case '/':
+            //        if (num2 == 0)
+            //        {
+            //            Console.WriteLine("Cannot divide by zero");
+            //            break;
+            //        }
+            //        Console.WriteLine("The quotient is: " + (num1 / num2));
+            //        break;
+            //    default:
+            //        Console.WriteLine("Invalid operation");
+            //        break;
+            //}
+
+            //-----------------------Basic ATM System-----------------------
+            double balance = 1000;
+            Console.WriteLine("Welcome to the ATM");
+            
+            Console.WriteLine("1. Withdraw Money ");
+            Console.WriteLine("2. Deposit Money ");
+            Console.WriteLine("3. Check Balance ");
+            Console.WriteLine("4. Exit ");
+            int option = int.Parse(Console.ReadLine());
+            switch (option)
             {
-                case '+':
-                    Console.WriteLine("The sum is: " + (num1 + num2));
-                    break;
-                case '-':
-                    Console.WriteLine("The difference is: " + (num1 - num2));
-                    break;
-                case '*':
-                    Console.WriteLine("The product is: " + (num1 * num2));
-                    break;
-                case '/':
-                    if (num2 == 0)
+                case 1:
+                    if (balance <= 0)
                     {
-                        Console.WriteLine("Cannot divide by zero");
+                        Console.WriteLine("The balance is zero");
                         break;
                     }
-                    Console.WriteLine("The quotient is: " + (num1 / num2));
+                    Console.WriteLine("Enter the amount to withdraw money: ");
+                    double withdraw = double.Parse(Console.ReadLine());
+                    balance -= withdraw;
+                    Console.WriteLine("The new balance is: " + balance);
                     break;
-                default:
-                    Console.WriteLine("Invalid operation");
+                case 2:
+                    Console.WriteLine("Enter the amount to deposit money: ");
+                    double deposit = double.Parse(Console.ReadLine());
+                    balance += deposit;
+                    Console.WriteLine("The new balance is: " + balance);
+                    break;
+                case 3:
+                    Console.WriteLine("The balance is: " + balance);
+                    break;
+                case 4:
+                    Console.WriteLine("Thank you for using the ATM");
                     break;
             }
         }

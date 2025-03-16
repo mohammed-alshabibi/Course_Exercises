@@ -303,6 +303,24 @@ namespace Part1Exs
             //    fact = fact * i;
             //}
             //Console.WriteLine("The factorial of " + n + " is: " + fact);
+            //-------------------------- Sum of Even and Odd Numbers------------------
+            Console.WriteLine("Enter a number: ");
+            int n = int.Parse(Console.ReadLine());
+            int sumEven = 0;
+            int sumOdd = 0;
+            for (int i = 0; i <= n; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    sumEven = sumEven + i;                  
+                }
+                else
+                {
+                    sumOdd = sumOdd + i;
+                }
+            }
+            Console.WriteLine("The even numbers are: " + sumEven);
+            Console.WriteLine("The odd numbers are: " + sumOdd);
 
         }
     }

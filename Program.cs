@@ -304,23 +304,66 @@ namespace Part1Exs
             //}
             //Console.WriteLine("The factorial of " + n + " is: " + fact);
             //-------------------------- Sum of Even and Odd Numbers------------------
-            Console.WriteLine("Enter a number: ");
-            int n = int.Parse(Console.ReadLine());
-            int sumEven = 0;
-            int sumOdd = 0;
-            for (int i = 0; i <= n; i++)
+            //Console.WriteLine("Enter a number: ");
+            //int n = int.Parse(Console.ReadLine());
+            //int sumEven = 0;
+            //int sumOdd = 0;
+            //for (int i = 0; i <= n; i++)
+            //{
+            //    if (i % 2 == 0)
+            //    {
+            //        sumEven = sumEven + i;                  
+            //    }
+            //    else
+            //    {
+            //        sumOdd = sumOdd + i;
+            //    }
+            //}
+            //Console.WriteLine("The even numbers are: " + sumEven);
+            //Console.WriteLine("The odd numbers are: " + sumOdd);
+            //--------------------------Scientific Calculator (Switch-Case & Math Functions)----------------
+            Console.WriteLine("Choose an operation: ");
+            Console.WriteLine("1.sin\n2.cos\n3.tan\n4.sqrt\n5.log\n6.pow");
+            int option = int.Parse(Console.ReadLine());
+            switch (option)
             {
-                if (i % 2 == 0)
-                {
-                    sumEven = sumEven + i;                  
-                }
-                else
-                {
-                    sumOdd = sumOdd + i;
-                }
+                case 1:
+                    Console.WriteLine("Enter the number: ");
+                    double num = double.Parse(Console.ReadLine());
+                    Console.WriteLine("The sin of " + num + " is: " + Math.Sin(num));
+                    break;
+                case 2:
+                    Console.WriteLine("Enter the number: ");
+                    double num1 = double.Parse(Console.ReadLine());
+                    Console.WriteLine("The cos of " + num1 + " is: " + Math.Cos(num1));
+                    break;
+                case 3:
+                    Console.WriteLine("Enter the number: ");
+                    double num2 = double.Parse(Console.ReadLine());
+                    Console.WriteLine("The tan of " + num2 + " is: " + Math.Tan(num2));
+                    break;
+                case 4:
+                    Console.WriteLine("Enter the number: ");
+                    double num3 = double.Parse(Console.ReadLine());
+                    Console.WriteLine("The square root of " + num3 + " is: " + Math.Sqrt(num3));
+                    break;
+                case 5:
+                    Console.WriteLine("Enter the number: ");
+                    double num4 = double.Parse(Console.ReadLine());
+                    Console.WriteLine("The log of " + num4 + " is: " + Math.Log(num4));
+                    break;
+                case 6:
+                    Console.WriteLine("Enter the base: ");
+                    double num5 = double.Parse(Console.ReadLine());
+                    Console.WriteLine("Enter the power: ");
+                    double num6 = double.Parse(Console.ReadLine());
+                    Console.WriteLine("The power of " + num5 + " raised to " + num6 + " is: " + Math.Pow(num5, num6));
+                    break;
+                default:
+                    Console.WriteLine("Invalid operation");
+                    break;
             }
-            Console.WriteLine("The even numbers are: " + sumEven);
-            Console.WriteLine("The odd numbers are: " + sumOdd);
+
 
         }
     }

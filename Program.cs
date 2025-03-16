@@ -262,40 +262,48 @@ namespace Part1Exs
             //        break;
             //}
             //-------------------------- Geometry Calculator-----------------------
-            Console.WriteLine("choose a chape:");
-            Console.WriteLine("1. Circle (Calculate Area & Circumference) ");
-            Console.WriteLine("2. Square(Calculate Area & Perimeter)");
-            Console.WriteLine("3. Triangle (Calculate Area)");
-            int option = int.Parse(Console.ReadLine());
-            switch (option)
-            {
-                case 1:
-                    Console.WriteLine("Enter the radius of the circle: ");
-                    double radius = double.Parse(Console.ReadLine());
-                    double area = 3.14 * radius * radius;
-                    double circumference = 2 * 3.14 * radius;
-                    Console.WriteLine("The area of the circle is: " + area);
-                    Console.WriteLine("The circumference of the circle is: " + circumference);
-                    break;
-                case 2:
-                    Console.WriteLine("Enter the side of the square: ");
-                    double side = double.Parse(Console.ReadLine());
-                    double areaSquare = side * side;
-                    double perimeter = 4 * side;
-                    Console.WriteLine("The area of the square is: " + areaSquare);
-                    Console.WriteLine("The perimeter of the square is: " + perimeter);
-                    break;
-                case 3:
-                    Console.WriteLine("Enter the base of the triangle: ");
-                    double baseTriangle = double.Parse(Console.ReadLine());
-                    Console.WriteLine("Enter the height of the triangle: ");
-                    double height = double.Parse(Console.ReadLine());
-                    double areaTriangle = 0.5 * baseTriangle * height;
-                    Console.WriteLine("The area of the triangle is: " + areaTriangle);
-                    break;
-            }
+            //Console.WriteLine("choose a chape:");
+            //Console.WriteLine("1. Circle (Calculate Area & Circumference) ");
+            //Console.WriteLine("2. Square(Calculate Area & Perimeter)");
+            //Console.WriteLine("3. Triangle (Calculate Area)");
+            //int option = int.Parse(Console.ReadLine());
+            //switch (option)
+            //{
+            //    case 1:
+            //        Console.WriteLine("Enter the radius of the circle: ");
+            //        double radius = double.Parse(Console.ReadLine());
+            //        double area = 3.14 * radius * radius;
+            //        double circumference = 2 * 3.14 * radius;
+            //        Console.WriteLine("The area of the circle is: " + area);
+            //        Console.WriteLine("The circumference of the circle is: " + circumference);
+            //        break;
+            //    case 2:
+            //        Console.WriteLine("Enter the side of the square: ");
+            //        double side = double.Parse(Console.ReadLine());
+            //        double areaSquare = side * side;
+            //        double perimeter = 4 * side;
+            //        Console.WriteLine("The area of the square is: " + areaSquare);
+            //        Console.WriteLine("The perimeter of the square is: " + perimeter);
+            //        break;
+            //    case 3:
+            //        Console.WriteLine("Enter the base of the triangle: ");
+            //        double baseTriangle = double.Parse(Console.ReadLine());
+            //        Console.WriteLine("Enter the height of the triangle: ");
+            //        double height = double.Parse(Console.ReadLine());
+            //        double areaTriangle = 0.5 * baseTriangle * height;
+            //        Console.WriteLine("The area of the triangle is: " + areaTriangle);
+            //        break;
+            //}
+            //--------------------------Factorial of a Number -------------------------
+            //Console.WriteLine("Enter a number of N:");
+            //int n = int.Parse(Console.ReadLine());
+            //int fact = 1;
+            //for (int i=1; i <= n; i++)
+            //{
+            //    fact = fact * i;
+            //}
+            //Console.WriteLine("The factorial of " + n + " is: " + fact);
 
-
-            }
+        }
     }
 }

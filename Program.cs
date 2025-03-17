@@ -434,8 +434,8 @@ namespace Part1Exs
             //    Console.WriteLine();
             //}
             //--------------------------Print a Diamond Pattern (For Loop)---------------
-            //Console.WriteLine("Enter number of N:");
-            //int n = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter number of N:");
+            int n = int.Parse(Console.ReadLine());
             //for (int i = 1; i <= n; i++)
             //{
 
@@ -447,6 +447,28 @@ namespace Part1Exs
             //{
             //    Console.WriteLine(new string(' ', n - i) + new string('*', i * 2 - 1));
             //}
+            int count = n * 2 - 1;
+            for (int i = 1; i <= count; i++)
+            {
+                //upper
+                if (i <= n)
+                {
+                    for (int j = 1; j <= i; j++)
+                    {
+                        Console.WriteLine(new string(' ', n - j) + new string('*', j * 2 - 1));
+                    }
+                }
+                else
+                {
+                    //lower
+                    for (int j = n - 1; j >= 1; j--)
+                    {
+                        Console.WriteLine(new string(' ', n - j) + new string('*', j * 2 - 1));
+                    }
+
+                }
+                Console.WriteLine();
+            }
             //----------------------------Guess Game with helper ---------------
             //Random random = new Random();
             //int randomNumber = random.Next(1, 100);

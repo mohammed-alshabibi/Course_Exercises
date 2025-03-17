@@ -229,10 +229,11 @@ namespace Part1Exs
             char choice;
             double balance = 1000;
             bool isActive = false;
-            Console.WriteLine("Welcome to the ATM");
+            
             do
             {
-
+                Console.Clear();
+                Console.WriteLine("Welcome to the ATM");
                 Console.WriteLine("1. Withdraw Money ");
                 Console.WriteLine("2. Deposit Money ");
                 Console.WriteLine("3. Check Balance ");
@@ -241,14 +242,15 @@ namespace Part1Exs
                 switch (option)
                 {
                     case 1:
+                        Console.WriteLine("Enter the amount to withdraw money: ");
                         double withdraw = double.Parse(Console.ReadLine());
-                        if (balance <= 0 && withdraw > balance)
+                        if (balance <=0 & withdraw > balance)
                         {
                             Console.WriteLine("the process anavilable");
                             isActive = true;
                             break;
                         }else
-                            Console.WriteLine("Enter the amount to withdraw money: ");
+                            
 
                         balance -= withdraw;
                         
@@ -277,7 +279,7 @@ namespace Part1Exs
                 {
                     Console.WriteLine("The balance is: " + balance);
                 }
-                Console.WriteLine("Do you want another operation ? y / n");
+                Console.WriteLine("Do you want another operation ? y / n\n");
                 choice = Console.ReadKey().KeyChar;
             }
 

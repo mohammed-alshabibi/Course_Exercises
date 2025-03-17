@@ -400,6 +400,14 @@ namespace Part1Exs
             //    Console.WriteLine(new string('*', i));
 
             //}
+            //for (int i = 0; i <= 5; i++)
+            //{
+            //    for (int j = 1; j <= i; j++)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+            //}
             //--------------------------Print a Pyramid Pattern (For Loop)---------
             //Console.WriteLine("Enter number of N:");
             //int n = int.Parse(Console.ReadLine());
@@ -459,14 +467,24 @@ namespace Part1Exs
             //    }
             //}
             //--------------------------Multiplication table( nested loop)----------------
-            for(int i=1; i <= 5; i++)
-            {
-                for(int j=1; j <= 5; j++)
-                {
-                    Console.Write(i * j+" ");
-                }
-                Console.WriteLine();
-            }
+            //for(int i=1; i <= 5; i++)
+            //{
+            //    for(int j=1; j <= 5; j++)
+            //    {
+            //        Console.Write(i * j+" ");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+
+
+
+
+
+
+
+
+
         }
 
         }

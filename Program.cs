@@ -421,6 +421,18 @@ namespace Part1Exs
             //    Console.WriteLine(new string('*', i * 2 - 1));
 
             //}
+            //for (int i = 0; i <= n; i++)
+            //{
+            //    for (int j = n-i; j >= 1; j--)
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    for (int j = 1; j <= i*2-1; j++)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+            //}
             //--------------------------Print a Diamond Pattern (For Loop)---------------
             //Console.WriteLine("Enter number of N:");
             //int n = int.Parse(Console.ReadLine());
@@ -487,6 +499,6 @@ namespace Part1Exs
 
         }
 
-        }
+    }
     }
 

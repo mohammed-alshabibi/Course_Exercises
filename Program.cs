@@ -509,145 +509,186 @@ namespace Part1Exs
         }
         static void ExeArray()
         {
-            //---------------Array Initialization & Output -----------
-            //int[] num = new int[5];
-            //Console.WriteLine("enter 5 integer number: ");
-            //for (int i = 0; i < num.Length; i++)
-            //{
-            //    num[i] = int.Parse(Console.ReadLine());
-            //}
-            //for (int i = 0; i < num.Length; i++)
-            //{
-            //   Console.WriteLine(num[i])  ;
-            //}
-            //---------------Find Maximum & Minimum in an Array ---------
-            // Console.WriteLine("enter 10 number: ");
-            // int[] num = new int[10];
-            // for (int i = 0; i < num.Length; i++)
-            // {
-            //     num[i] = int.Parse(Console.ReadLine());
-            // }
-            //Console.WriteLine("Max number "+num.Max()) ;
-            // Console.WriteLine("Min number " + num.Min());
-            //----------------Count Even & Odd Numbers----------
-            //Console.WriteLine("Enter N number: ");
-            //int n = int.Parse(Console.ReadLine());
-            //int[] num = new int[n];
-            //int countEven = 0;
-            //int countOdd = 0;
-            //int []EvenArray = new int[n];
-            //int []OddArray = new int[n];
-            //Console.WriteLine("Enter the number of array: ");
-            //for (int i = 0; i < num.Length; i++)
-            //{
-            //    num[i] = int.Parse(Console.ReadLine());
-            //}
-            //for (int i = 0; i < num.Length; i++)
-            //{
-            //    if (num[i] % 2 == 0)
-            //    {
-            //        EvenArray[countEven] = num[i];
-            //        countEven ++;
-
-            //    }
-            //    else
-            //    {
-            //        OddArray[countOdd] = num[i];
-            //        countOdd ++;
-            //    }
-            //}
-            //Console.WriteLine("count Even number: "+ countEven);
-            //Console.WriteLine("count Odd number: " + countOdd);
-            //Console.WriteLine("even number: " + string.Join(",", EvenArray));
-            //Console.WriteLine("odd number: " +string.Join(",",OddArray) );
-            //-----------------Reverse an Array----------------
-            //Console.WriteLine("Enter N number: ");
-
-            //int n = int.Parse(Console.ReadLine());
-            //int[] num = new int[n];
-            //Console.WriteLine("Enter the number of array: ");
-            //for (int i = 0; i < num.Length; i++)
-            //{
-            //    num[i] = int.Parse(Console.ReadLine());
-            //}
-            //Array.Reverse(num);
-            //Console.WriteLine("Reverse array: " + string.Join(",", num));
-            //------------------Search for a Number in an Array------------
-            //int[] num = { 1, 2, 3, 4, 5, 6 };
-            //Console.WriteLine("Enter the number to search: ");
-            //int number = int.Parse(Console.ReadLine());
-
-            //for (int i=0; i < num.Length; i++)
-            //{
-            //    if (num[i] == number)
-            //    {
-            //        int index = Array.IndexOf(num, number);
-            //        Console.WriteLine("The number is found at index: " +index );
-
-            //    }
-
-            //}
-            //------------------Sorting an Array (Ascending Order)-------------
-            //Console.WriteLine("Enter N number: ");
-
-            //int n = int.Parse(Console.ReadLine());
-            //int[] num = new int[n];
-            //Console.WriteLine("Enter the number of array: ");
-            //for (int i = 0; i < num.Length; i++)
-            //{
-            //    num[i] = int.Parse(Console.ReadLine());
-            //}
-            //Array.Sort(num);
-            //Console.WriteLine("Sort array: " + string.Join(",", num));
-            //------------------Merging Two Arrays---------------------------
-            //Console.WriteLine("Enter length of array: ");
-
-            //int len = int.Parse(Console.ReadLine());
-            //int[] arrayOne = new int[len];
-            //Console.WriteLine("Enter the number of array one: ");
-            //for (int i = 0; i < arrayOne.Length; i++)
-            //{
-            //    arrayOne[i] = int.Parse(Console.ReadLine());
-            //}
-
-            //int[] arrayTwo = new int[len];
-            //Console.WriteLine("Enter the number of array two: ");
-            //for (int i = 0; i < arrayTwo.Length; i++)
-            //{
-            //    arrayTwo[i] = int.Parse(Console.ReadLine());
-            //}
-            //int lengthArrayThree = arrayOne.Length + arrayTwo.Length;
-            //int[] arrayThree = new int[lengthArrayThree];
-            //for (int i = 0; i < len; i++)
-            //{
-            //    arrayThree[i] = arrayOne[i];
-            //    arrayThree[i+len] = arrayTwo[i];
-            //}
-            //Console.WriteLine("Merged array: " + string.Join(",", arrayThree));
-            //------------------Remove Duplicates from an Array---------------
-            //Console.WriteLine("Enter N number: ");
-            //int n = int.Parse(Console.ReadLine());
-            //int[] num = new int[n];
-            //Console.WriteLine("Enter the number of array: ");
-            //for (int i = 0; i < num.Length; i++)
-            //{
-            //    num[i] = int.Parse(Console.ReadLine());
-            //}
-            //int[] uniqueArray = num.Distinct().ToArray();
-            //Console.WriteLine("Unique array: " + string.Join(",", uniqueArray));
-            //------------------Second Largest Number in an Array----------------
-            Console.WriteLine("Enter N number: ");
-            int n = int.Parse(Console.ReadLine());
-            int[] num = new int[n];
-            Console.WriteLine("Enter the number of array: ");
-            for (int i = 0; i < num.Length; i++)
+           
             {
-                num[i] = int.Parse(Console.ReadLine());
+                while (true)
+                {
+                    Console.Clear();
+                    Console.WriteLine("\nSelect an Array Operation:");
+                    Console.WriteLine("1. Array Initialization & Output");
+                    Console.WriteLine("2. Find Maximum & Minimum in an Array");
+                    Console.WriteLine("3. Count Even & Odd Numbers");
+                    Console.WriteLine("4. Reverse an Array");
+                    Console.WriteLine("5. Search for a Number in an Array");
+                    Console.WriteLine("6. Sorting an Array (Ascending Order)");
+                    Console.WriteLine("7. Merging Two Arrays");
+                    Console.WriteLine("8. Remove Duplicates from an Array");
+                    Console.WriteLine("9. Second Largest Number in an Array");
+                    Console.WriteLine("0. Exit");
+
+                    Console.Write("Enter your choice: ");
+                    int choice = int.Parse(Console.ReadLine());
+
+                    switch (choice)
+                    {
+                        case 1:
+                            // Array Initialization & Output
+                            int[] num1 = new int[5];
+                            Console.WriteLine("Enter 5 integer numbers: ");
+                            for (int i = 0; i < num1.Length; i++)
+                            {
+                                num1[i] = int.Parse(Console.ReadLine());
+                            }
+                            for (int i = 0; i < num1.Length; i++)
+                            {
+                                Console.WriteLine(num1[i]);
+                            }
+                            break;
+                        case 2:
+                            // Find Maximum & Minimum in an Array
+                            Console.WriteLine("Enter 10 numbers: ");
+                            int[] num2 = new int[10];
+                            for (int i = 0; i < num2.Length; i++)
+                            {
+                                num2[i] = int.Parse(Console.ReadLine());
+                            }
+                            Console.WriteLine("Max number: " + num2.Max());
+                            Console.WriteLine("Min number: " + num2.Min());
+                            break;
+                        case 3:
+                            // Count Even & Odd Numbers
+                            Console.WriteLine("Enter N number: ");
+                            int n1 = int.Parse(Console.ReadLine());
+                            int[] num3 = new int[n1];
+                            int countEven = 0;
+                            int countOdd = 0;
+                            int[] EvenArray = new int[n1];
+                            int[] OddArray = new int[n1];
+                            Console.WriteLine("Enter the numbers of the array: ");
+                            for (int i = 0; i < num3.Length; i++)
+                            {
+                                num3[i] = int.Parse(Console.ReadLine());
+                            }
+                            for (int i = 0; i < num3.Length; i++)
+                            {
+                                if (num3[i] % 2 == 0)
+                                {
+                                    EvenArray[countEven] = num3[i];
+                                    countEven++;
+                                }
+                                else
+                                {
+                                    OddArray[countOdd] = num3[i];
+                                    countOdd++;
+                                }
+                            }
+                            Console.WriteLine("Count of Even numbers: " + countEven);
+                            Console.WriteLine("Count of Odd numbers: " + countOdd);
+                            Console.WriteLine("Even numbers: " + string.Join(",", EvenArray.Take(countEven)));
+                            Console.WriteLine("Odd numbers: " + string.Join(",", OddArray.Take(countOdd)));
+                            break;
+                        case 4:
+                            // Reverse an Array
+                            Console.WriteLine("Enter N number: ");
+                            int n2 = int.Parse(Console.ReadLine());
+                            int[] num4 = new int[n2];
+                            Console.WriteLine("Enter the numbers of the array: ");
+                            for (int i = 0; i < num4.Length; i++)
+                            {
+                                num4[i] = int.Parse(Console.ReadLine());
+                            }
+                            Array.Reverse(num4);
+                            Console.WriteLine("Reversed array: " + string.Join(",", num4));
+                            break;
+                        case 5:
+                            // Search for a Number in an Array
+                            int[] num5 = { 1, 2, 3, 4, 5, 6 };
+                            Console.WriteLine("Enter the number to search: ");
+                            int number = int.Parse(Console.ReadLine());
+                            int index = Array.IndexOf(num5, number);
+                            if (index >= 0)
+                            {
+                                Console.WriteLine("The number is found at index: " + index);
+                            }
+                            else
+                            {
+                                Console.WriteLine("The number is not found in the array.");
+                            }
+                            break;
+                        case 6:
+                            // Sorting an Array (Ascending Order)
+                            Console.WriteLine("Enter N number: ");
+                            int n3 = int.Parse(Console.ReadLine());
+                            int[] num6 = new int[n3];
+                            Console.WriteLine("Enter the numbers of the array: ");
+                            for (int i = 0; i < num6.Length; i++)
+                            {
+                                num6[i] = int.Parse(Console.ReadLine());
+                            }
+                            Array.Sort(num6);
+                            Console.WriteLine("Sorted array: " + string.Join(",", num6));
+                            break;
+                        case 7:
+                            // Merging Two Arrays
+                            Console.WriteLine("Enter length of arrays: ");
+                            int len = int.Parse(Console.ReadLine());
+                            int[] arrayOne = new int[len];
+                            Console.WriteLine("Enter the numbers of array one: ");
+                            for (int i = 0; i < arrayOne.Length; i++)
+                            {
+                                arrayOne[i] = int.Parse(Console.ReadLine());
+                            }
+                            int[] arrayTwo = new int[len];
+                            Console.WriteLine("Enter the numbers of array two: ");
+                            for (int i = 0; i < arrayTwo.Length; i++)
+                            {
+                                arrayTwo[i] = int.Parse(Console.ReadLine());
+                            }
+                            int lengthArrayThree = arrayOne.Length + arrayTwo.Length;
+                            int[] arrayThree = new int[lengthArrayThree];
+                            for (int i = 0; i < len; i++)
+                            {
+                                arrayThree[i] = arrayOne[i];
+                                arrayThree[i + len] = arrayTwo[i];
+                            }
+                            Console.WriteLine("Merged array: " + string.Join(",", arrayThree));
+                            break;
+                        case 8:
+                            // Remove Duplicates from an Array
+                            Console.WriteLine("Enter N number: ");
+                            int n4 = int.Parse(Console.ReadLine());
+                            int[] num7 = new int[n4];
+                            Console.WriteLine("Enter the numbers of the array: ");
+                            for (int i = 0; i < num7.Length; i++)
+                            {
+                                num7[i] = int.Parse(Console.ReadLine());
+                            }
+                            int[] uniqueArray = num7.Distinct().ToArray();
+                            Console.WriteLine("Unique array: " + string.Join(",", uniqueArray));
+                            break;
+                        case 9:
+                            // Second Largest Number in an Array
+                            Console.WriteLine("Enter N number: ");
+                            int n5 = int.Parse(Console.ReadLine());
+                            int[] num8 = new int[n5];
+                            Console.WriteLine("Enter the numbers of the array: ");
+                            for (int i = 0; i < num8.Length; i++)
+                            {
+                                num8[i] = int.Parse(Console.ReadLine());
+                            }
+                            Array.Sort(num8);
+                            Console.WriteLine("Second largest number: " + num8[num8.Length - 2]);
+                            break;
+                        case 0:
+                            return;
+                        default:
+                            Console.WriteLine("Invalid Choice! Try again.");
+                            break;
+                    }
+                    Console.Write("\nPress any key to continue...");
+                    Console.ReadLine();
+                }
             }
-            Array.Sort(num);
-            Console.WriteLine("Second largest number: " + num[num.Length - 2]);
-
-
 
 
 

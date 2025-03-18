@@ -7,62 +7,6 @@ namespace Part1Exs
         static void Main(string[] args)
         {
 
-
-
-            //---------------------------------------
-            //2. Largest of Three Numbers 
-            
-
-            //----------------------------------------------------------
-            
-
-
-            //----------------------------------------------------------
-            
-
-            //----------------------------------------------------------
-            
-
-            //----------------------------------------------------------
-            
-
-            //----------------------------------------------------------
-
-            //--------------------------- Simple Calculator (Switch-Case) ----------------
-
-
-            //-----------------------Basic ATM System-----------------------
-            //   
-
-
-
-            //-------------------------- Geometry Calculator-----------------------
-
-            //--------------------------Factorial of a Number -------------------------
-
-            //-------------------------- Sum of Even and Odd Numbers------------------
-
-            //--------------------------Scientific Calculator (Switch-Case & Math Functions)----------------
-
-            //-------------------------- Print Pattern (For Loop)-------------------
-
-            //--------------------------Print a Pyramid Pattern (For Loop)---------
-
-            //--------------------------Print a Diamond Pattern (For Loop)---------------
-
-
-            //----------------------------Guess Game with helper ---------------
-
-            //--------------------------Multiplication table( nested loop)----------------
-            //for(int i=1; i <= 5; i++)
-            //{
-            //    for(int j=1; j <= 5; j++)
-            //    {
-            //        Console.Write(i * j+" ");
-            //    }
-            //    Console.WriteLine();
-            //}
-
             while (true)
             {
                 Console.Clear();
@@ -84,7 +28,7 @@ namespace Part1Exs
                 Console.WriteLine("15. Swap Two Numbers");
                 Console.WriteLine("16. Days Converter");
                 Console.WriteLine("17. Electricity Bill Calculator");
-                
+                Console.WriteLine("18. Array");
                 Console.WriteLine("0. Exit");
 
                 Console.Write("Enter your choice: ");
@@ -109,6 +53,8 @@ namespace Part1Exs
                     case 15: SwapTwoNumbers(); break;
                     case 16: DaysConverter(); break;
                     case 17: ElectricityBillCalculator(); break;
+                    case 18:
+                        ExeArray();break;
                     case 0: return;
                     default: Console.WriteLine("Invalid Choice! Try again."); break;
                 }
@@ -561,7 +507,20 @@ namespace Part1Exs
                 Console.WriteLine("Invalid input");
             }
         }
-       
+        static void ExeArray()
+        {
+            //---------------Array Initialization & Output -----------
+            int[] num = new int[5];
+            Console.WriteLine("enter 5 integer number: ");
+            for (int i = 0; i < num.Length; i++)
+            {
+                num[i] = int.Parse(Console.ReadLine());
+            }
+            for (int i = 0; i < num.Length; i++)
+            {
+               Console.WriteLine(num[i])  ;
+            }
+        }
 
 
 

@@ -600,30 +600,41 @@ namespace Part1Exs
             //Array.Sort(num);
             //Console.WriteLine("Sort array: " + string.Join(",", num));
             //------------------Merging Two Arrays---------------------------
-            Console.WriteLine("Enter length of array: ");
+            //Console.WriteLine("Enter length of array: ");
 
-            int len = int.Parse(Console.ReadLine());
-            int[] arrayOne = new int[len];
-            Console.WriteLine("Enter the number of array one: ");
-            for (int i = 0; i < arrayOne.Length; i++)
+            //int len = int.Parse(Console.ReadLine());
+            //int[] arrayOne = new int[len];
+            //Console.WriteLine("Enter the number of array one: ");
+            //for (int i = 0; i < arrayOne.Length; i++)
+            //{
+            //    arrayOne[i] = int.Parse(Console.ReadLine());
+            //}
+
+            //int[] arrayTwo = new int[len];
+            //Console.WriteLine("Enter the number of array two: ");
+            //for (int i = 0; i < arrayTwo.Length; i++)
+            //{
+            //    arrayTwo[i] = int.Parse(Console.ReadLine());
+            //}
+            //int lengthArrayThree = arrayOne.Length + arrayTwo.Length;
+            //int[] arrayThree = new int[lengthArrayThree];
+            //for (int i = 0; i < len; i++)
+            //{
+            //    arrayThree[i] = arrayOne[i];
+            //    arrayThree[i+len] = arrayTwo[i];
+            //}
+            //Console.WriteLine("Merged array: " + string.Join(",", arrayThree));
+            //------------------Remove Duplicates from an Array---------------
+            Console.WriteLine("Enter N number: ");
+            int n = int.Parse(Console.ReadLine());
+            int[] num = new int[n];
+            Console.WriteLine("Enter the number of array: ");
+            for (int i = 0; i < num.Length; i++)
             {
-                arrayOne[i] = int.Parse(Console.ReadLine());
+                num[i] = int.Parse(Console.ReadLine());
             }
-           
-            int[] arrayTwo = new int[len];
-            Console.WriteLine("Enter the number of array two: ");
-            for (int i = 0; i < arrayTwo.Length; i++)
-            {
-                arrayTwo[i] = int.Parse(Console.ReadLine());
-            }
-            int lengthArrayThree = arrayOne.Length + arrayTwo.Length;
-            int[] arrayThree = new int[lengthArrayThree];
-            for (int i = 0; i < len; i++)
-            {
-                arrayThree[i] = arrayOne[i];
-                arrayThree[i+len] = arrayTwo[i];
-            }
-            Console.WriteLine("Merged array: " + string.Join(",", arrayThree));
+            int[] uniqueArray = num.Distinct().ToArray();
+            Console.WriteLine("Unique array: " + string.Join(",", uniqueArray));
 
 
 

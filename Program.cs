@@ -6,196 +6,30 @@ namespace Part1Exs
     {
         static void Main(string[] args)
         {
-            // exs 1 even or odd
-            //int number;
-            //Console.WriteLine("Enter a number: ");
-            //number = int.Parse(Console.ReadLine());
 
-            //if (number%2 ==0)
-            //{
-            //    Console.WriteLine("The number is even");
-            //}
-            //else
-            //{
-            //    Console.WriteLine("The number is odd");
-            //}
 
 
             //---------------------------------------
             //2. Largest of Three Numbers 
-            //int num1, num2, num3;
-            //Console.WriteLine("Enter the first number: ");
-            //num1 = int.Parse(Console.ReadLine());
-            //Console.WriteLine("Enter the second number: ");
-            //num2 = int.Parse(Console.ReadLine());
-            //Console.WriteLine("Enter the third number: ");
-            //num3 = int.Parse(Console.ReadLine());
-            //if(num1 > num2 & num1 > num3)
-            //{
-            //    Console.WriteLine("The largest number is: " + num1);
-            //}
-            //else if (num2 > num1 & num2 > num3)
-            //{
-            //    Console.WriteLine("The largest number is: " + num2);
-            //}
-            //else if (num3 > num1 & num3 > num2)
-            //{
-            //    Console.WriteLine("The largest number is: " + num3);
-            //}
-            //else
-            //{
-            //    Console.WriteLine("The numbers are equal");
-            //}
+            
 
             //----------------------------------------------------------
-            //3. Temperature Converter
-            //double  C ,F;
-
-
-            //Console.WriteLine("Enter the temperature in Celsius: " );
-
-            //C = double.Parse(Console.ReadLine());
-
-
-            //F = (C * 9 / 5) -32 ;
-            //Console.Write("The temperature in Fahrenheit is: " + F);
+            
 
 
             //----------------------------------------------------------
-            //4. Simple Discount Calculator
-            //float price;
-            //Console.WriteLine("Enter the price of the item: ");
-            //price = float.Parse(Console.ReadLine());
-            //float discount;
-            //float finalPrice;
-            //if ( price > 100)
-            //{
-            //    discount = price * 10 / 100;
-            //    finalPrice = price - discount;
-            //    Console.WriteLine("The discount is 10% and the price after discount is: " + finalPrice);
-            //}
-            //else
-            //{
-            //    Console.WriteLine("No discount is applicable and the price is: " + price);
-            //}
+            
 
             //----------------------------------------------------------
-            //5. Grading System
-            //int score;
-            //Console.WriteLine("Enter the score: ");
-            //score = int.Parse(Console.ReadLine());
-            //if (score >= 90 & score <= 100 ) 
-            //{ 
-            //    Console.WriteLine("The grade is A");
-            //}
-            //else if (score >= 80 & score <= 89)
-            //{
-            //    Console.WriteLine("The grade is B");
-            //}
-            //else if (score >= 70 & score <= 79)
-            //{
-            //    Console.WriteLine("The grade is C");
-            //}
-            //else if (score >= 60 & score <= 69)
-            //{
-            //    Console.WriteLine("The grade is D");
-            //}
-            //else if (score >= 0 & score <= 59)
-            //{
-            //    Console.WriteLine("The grade is F");
-            //}
-            //else
-            //{
-            //    Console.WriteLine("Invalid score");
-            //}
+            
 
             //----------------------------------------------------------
-            //6. Swap Two Numbers 
-            //int num1, num2, temp;
-            //Console.WriteLine("Enter the first number: ");
-            //num1 = int.Parse(Console.ReadLine());
-            //Console.WriteLine("Enter the second number: ");
-            //num2 = int.Parse(Console.ReadLine());
-            //temp = num1;
-            //num1 = num2;
-            //num2 = temp;
-
-
-
-            //Console.Write("number 2 after swap is " +num2);
-            //Console.Write(" number 1 after swap is " + num1);
-
-
-            //----------------------------------------------------------
-            //7. Days to Weeks and Days Converter
-            //int days;
-            //double weeks;
-            //float remainingDays;
-            //Console.WriteLine("Enter the number of days: ");
-            //days = int.Parse(Console.ReadLine());
-
-            //weeks = days / 7;
-            //remainingDays = days % 7;
-            //Console.Write("The number of weeks is: " + weeks + " and remaining days is "+ remainingDays);
-
-            //----------------------------------------------------------
-            //8. Electricity Bill Calculator
-            //int unitsConsumed;
-            //double billAmount;
-            //Console.WriteLine("Enter the number of units consumed: ");
-            //unitsConsumed = int.Parse(Console.ReadLine());
-            //if (unitsConsumed >=0 & unitsConsumed <=100)
-            //{
-            //    billAmount = unitsConsumed * 0.5;
-            //    Console.WriteLine("The bill amount is: " + billAmount);
-            //}
-            //else if (unitsConsumed >= 101 & unitsConsumed <= 300)
-            //{
-            //    billAmount = unitsConsumed * 0.75;
-            //    Console.WriteLine("The bill amount is: " + billAmount);
-            //}
-            //else if( unitsConsumed >= 301)
-            //{
-            //    billAmount = unitsConsumed * 1;
-            //    Console.WriteLine("The bill amount is: " + billAmount);
-            //}
-            //else
-            //{
-            //    Console.WriteLine("Invalid input");
-            //}
+            
 
             //----------------------------------------------------------
 
             //--------------------------- Simple Calculator (Switch-Case) ----------------
-            //Console.WriteLine("Enter the first number: ");
-            //int num1 = int.Parse(Console.ReadLine());
-            //Console.WriteLine("Enter the second number: ");
-            //int num2 = int.Parse(Console.ReadLine());
-            //Console.WriteLine("Enter the operation: ");
-            //char operation = char.Parse(Console.ReadLine());
-            //switch(operation)
-            //{
-            //    case '+':
-            //        Console.WriteLine("The sum is: " + (num1 + num2));
-            //        break;
-            //    case '-':
-            //        Console.WriteLine("The difference is: " + (num1 - num2));
-            //        break;
-            //    case '*':
-            //        Console.WriteLine("The product is: " + (num1 * num2));
-            //        break;
-            //    case '/':
-            //        if (num2 == 0)
-            //        {
-            //            Console.WriteLine("Cannot divide by zero");
-            //            break;
-            //        }
-            //        Console.WriteLine("The quotient is: " + (num1 / num2));
-            //        break;
-            //    default:
-            //        Console.WriteLine("Invalid operation");
-            //        break;
-            //}
+
 
             //-----------------------Basic ATM System-----------------------
             //   
@@ -218,7 +52,7 @@ namespace Part1Exs
 
 
             //----------------------------Guess Game with helper ---------------
-            
+
             //--------------------------Multiplication table( nested loop)----------------
             //for(int i=1; i <= 5; i++)
             //{
@@ -243,6 +77,14 @@ namespace Part1Exs
                 Console.WriteLine("8. Print Pyramid Pattern");
                 Console.WriteLine("9. Print Diamond Pattern");
                 Console.WriteLine("10. Guess the Number Game");
+                Console.WriteLine("11. Finde the Large Of Three Number");
+                Console.WriteLine("12. Temperature Converter");
+                Console.WriteLine("13. Simple Discount Calculator");
+                Console.WriteLine("14. Grading System");
+                Console.WriteLine("15. Swap Two Numbers");
+                Console.WriteLine("16. Days Converter");
+                Console.WriteLine("17. Electricity Bill Calculator");
+                
                 Console.WriteLine("0. Exit");
 
                 Console.Write("Enter your choice: ");
@@ -260,21 +102,23 @@ namespace Part1Exs
                     case 8: PrintPyramid(); break;
                     case 9: PrintDiamond(); break;
                     case 10: GuessGame(); break;
+                    case 11: LargeOfThreeNumber(); break;
+                    case 12: TemperatureConverter();break;
+                    case 13: SimpleDiscountCalculator();break;
+                    case 14:GradingSystem(); break;
+                    case 15: SwapTwoNumbers(); break;
+                    case 16: DaysConverter(); break;
+                    case 17: ElectricityBillCalculator(); break;
                     case 0: return;
                     default: Console.WriteLine("Invalid Choice! Try again."); break;
                 }
                 Console.Write("\nPress any key to continue...");
                 Console.ReadLine();
             }
-
-
-
-
-
-
-
-
         }
+
+
+
         static void SimpleCalculator()
         {
             //9. Simple Calculator
@@ -417,8 +261,6 @@ namespace Part1Exs
             }
             Console.WriteLine("The factorial of " + n + " is: " + fact);
         }
-
-        // 5. Sum of Even and Odd Numbers
         static void SumEvenOdd()
         {
             Console.WriteLine("Enter a number: ");
@@ -483,7 +325,6 @@ namespace Part1Exs
                     break;
             }
         }
-
         static void PrintTriangle()
         {
             Console.WriteLine("Enter number of N:");
@@ -503,8 +344,6 @@ namespace Part1Exs
                 Console.WriteLine();
             }
         }
-
-        // 8. Print Pyramid Pattern
         static void PrintPyramid()
         {
             Console.WriteLine("Enter number of N:");
@@ -532,8 +371,6 @@ namespace Part1Exs
                 Console.WriteLine();
             }
         }
-
-        // 9. Print Diamond Pattern
         static void PrintDiamond()
         {
             Console.WriteLine("Enter number of N:");
@@ -553,7 +390,6 @@ namespace Part1Exs
 
 
         }
-
         static void GuessGame()
         {
             Random random = new Random();
@@ -587,9 +423,146 @@ namespace Part1Exs
                 }
             }
         }
+        static void LargeOfThreeNumber()
+        {
+            // exs 1 even or odd
+            int num1, num2, num3;
+            Console.WriteLine("Enter the first number: ");
+            num1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the second number: ");
+            num2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the third number: ");
+            num3 = int.Parse(Console.ReadLine());
+            if (num1 > num2 & num1 > num3)
+            {
+                Console.WriteLine("The largest number is: " + num1);
+            }
+            else if (num2 > num1 & num2 > num3)
+            {
+                Console.WriteLine("The largest number is: " + num2);
+            }
+            else if (num3 > num1 & num3 > num2)
+            {
+                Console.WriteLine("The largest number is: " + num3);
+            }
+            else
+            {
+                Console.WriteLine("The numbers are equal");
+            }
+        }
+        static void TemperatureConverter()
+        {
+            double C, F;
+            Console.WriteLine("Enter the temperature in Celsius: ");
+            C = double.Parse(Console.ReadLine());
+            F = (C * 9 / 5) - 32;
+            Console.Write("The temperature in Fahrenheit is: " + F);
+        }
+        static void SimpleDiscountCalculator()
+        {
+            float price;
+            Console.WriteLine("Enter the price of the item: ");
+            price = float.Parse(Console.ReadLine());
+            float discount;
+            float finalPrice;
+            if (price > 100)
+            {
+                discount = price * 10 / 100;
+                finalPrice = price - discount;
+                Console.WriteLine("The discount is 10% and the price after discount is: " + finalPrice);
+            }
+            else
+            {
+                Console.WriteLine("No discount is applicable and the price is: " + price);
+            }
+        }
+        static void GradingSystem()
+        {
+            int score;
+            Console.WriteLine("Enter the score: ");
+            score = int.Parse(Console.ReadLine());
+            if (score >= 90 & score <= 100)
+            {
+                Console.WriteLine("The grade is A");
+            }
+            else if (score >= 80 & score <= 89)
+            {
+                Console.WriteLine("The grade is B");
+            }
+            else if (score >= 70 & score <= 79)
+            {
+                Console.WriteLine("The grade is C");
+            }
+            else if (score >= 60 & score <= 69)
+            {
+                Console.WriteLine("The grade is D");
+            }
+            else if (score >= 0 & score <= 59)
+            {
+                Console.WriteLine("The grade is F");
+            }
+            else
+            {
+                Console.WriteLine("Invalid score");
+            }
+        }
+        static void SwapTwoNumbers()
+        {
+            int num1, num2, temp;
+            Console.WriteLine("Enter the first number: ");
+            num1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the second number: ");
+            num2 = int.Parse(Console.ReadLine());
+            temp = num1;
+            num1 = num2;
+            num2 = temp;
 
 
-        
+
+            Console.Write("number 2 after swap is " + num2);
+            Console.Write(" number 1 after swap is " + num1);
+        }
+        static void DaysConverter()
+        {
+            int days;
+            double weeks;
+            float remainingDays;
+            Console.WriteLine("Enter the number of days: ");
+            days = int.Parse(Console.ReadLine());
+
+            weeks = days / 7;
+            remainingDays = days % 7;
+            Console.Write("The number of weeks is: " + weeks + " and remaining days is " + remainingDays);
+
+        }
+        static void ElectricityBillCalculator()
+        {
+            int unitsConsumed;
+            double billAmount;
+            Console.WriteLine("Enter the number of units consumed: ");
+            unitsConsumed = int.Parse(Console.ReadLine());
+            if (unitsConsumed >= 0 & unitsConsumed <= 100)
+            {
+                billAmount = unitsConsumed * 0.5;
+                Console.WriteLine("The bill amount is: " + billAmount);
+            }
+            else if (unitsConsumed >= 101 & unitsConsumed <= 300)
+            {
+                billAmount = unitsConsumed * 0.75;
+                Console.WriteLine("The bill amount is: " + billAmount);
+            }
+            else if (unitsConsumed >= 301)
+            {
+                billAmount = unitsConsumed * 1;
+                Console.WriteLine("The bill amount is: " + billAmount);
+            }
+            else
+            {
+                Console.WriteLine("Invalid input");
+            }
+        }
+       
+
 
 
 
@@ -598,6 +571,6 @@ namespace Part1Exs
 
     }
 
-    
+
 }
 

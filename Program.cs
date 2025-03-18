@@ -521,14 +521,46 @@ namespace Part1Exs
             //   Console.WriteLine(num[i])  ;
             //}
             //---------------Find Maximum & Minimum in an Array ---------
-            Console.WriteLine("enter 10 number: ");
-            int[] num = new int[10];
+            // Console.WriteLine("enter 10 number: ");
+            // int[] num = new int[10];
+            // for (int i = 0; i < num.Length; i++)
+            // {
+            //     num[i] = int.Parse(Console.ReadLine());
+            // }
+            //Console.WriteLine("Max number "+num.Max()) ;
+            // Console.WriteLine("Min number " + num.Min());
+            //----------------Count Even & Odd Numbers----------
+            Console.WriteLine("Enter N number: ");
+            int n = int.Parse(Console.ReadLine());
+            int[] num = new int[n];
+            int countEven = 0;
+            int countOdd = 0;
+            int []EvenArray = new int[n];
+            int []OddArray = new int[n];
+            Console.WriteLine("Enter the number of array: ");
             for (int i = 0; i < num.Length; i++)
             {
                 num[i] = int.Parse(Console.ReadLine());
             }
-           Console.WriteLine("Max number "+num.Max()) ;
-            Console.WriteLine("Min number " + num.Min());
+            for (int i = 0; i < num.Length; i++)
+            {
+                if (num[i] % 2 == 0)
+                {
+                    EvenArray[countEven] = num[i];
+                    countEven ++;
+
+                }
+                else
+                {
+                    OddArray[countOdd] = num[i];
+                    countOdd ++;
+                }
+            }
+            Console.WriteLine("count Even number: "+ countEven);
+            Console.WriteLine("count Odd number: " + countOdd);
+            Console.WriteLine("even number: " + string.Join(",", EvenArray));
+            Console.WriteLine("odd number: " +string.Join(",",OddArray) );
+            //-----------------
 
 
 

@@ -561,19 +561,32 @@ namespace Part1Exs
             //Console.WriteLine("even number: " + string.Join(",", EvenArray));
             //Console.WriteLine("odd number: " +string.Join(",",OddArray) );
             //-----------------Reverse an Array----------------
-            Console.WriteLine("Enter N number: ");
+            //Console.WriteLine("Enter N number: ");
 
-            int n = int.Parse(Console.ReadLine());
-            int[] num = new int[n];
-            Console.WriteLine("Enter the number of array: ");
-            for (int i = 0; i < num.Length; i++)
+            //int n = int.Parse(Console.ReadLine());
+            //int[] num = new int[n];
+            //Console.WriteLine("Enter the number of array: ");
+            //for (int i = 0; i < num.Length; i++)
+            //{
+            //    num[i] = int.Parse(Console.ReadLine());
+            //}
+            //Array.Reverse(num);
+            //Console.WriteLine("Reverse array: " + string.Join(",", num));
+            //------------------Search for a Number in an Array------------
+            int[] num = { 1, 2, 3, 4, 5, 6 };
+            Console.WriteLine("Enter the number to search: ");
+            int number = int.Parse(Console.ReadLine());
+
+            for (int i=0; i < num.Length; i++)
             {
-                num[i] = int.Parse(Console.ReadLine());
+                if (num[i] == number)
+                {
+                    int index = Array.IndexOf(num, number);
+                    Console.WriteLine("The number is found at index: " +index );
+                   
+                }
+               
             }
-            Array.Reverse(num);
-            Console.WriteLine("Reverse array: " + string.Join(",", num));
-
-
 
 
 

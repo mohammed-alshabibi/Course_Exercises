@@ -510,17 +510,37 @@ namespace Part1Exs
         static void ExeArray()
         {
             //---------------Array Initialization & Output -----------
-            int[] num = new int[5];
-            Console.WriteLine("enter 5 integer number: ");
+            //int[] num = new int[5];
+            //Console.WriteLine("enter 5 integer number: ");
+            //for (int i = 0; i < num.Length; i++)
+            //{
+            //    num[i] = int.Parse(Console.ReadLine());
+            //}
+            //for (int i = 0; i < num.Length; i++)
+            //{
+            //   Console.WriteLine(num[i])  ;
+            //}
+            //---------------Find Maximum & Minimum in an Array ---------
+            Console.WriteLine("enter 10 number: ");
+            int[] num = new int[10];
             for (int i = 0; i < num.Length; i++)
             {
                 num[i] = int.Parse(Console.ReadLine());
             }
-            for (int i = 0; i < num.Length; i++)
-            {
-               Console.WriteLine(num[i])  ;
-            }
+           Console.WriteLine("Max number "+num.Max()) ;
+            Console.WriteLine("Min number " + num.Min());
+
+
+
+
+
+
+
+
+
+
         }
+
 
 
 

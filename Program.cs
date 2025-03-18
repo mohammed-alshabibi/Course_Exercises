@@ -625,6 +625,17 @@ namespace Part1Exs
             //}
             //Console.WriteLine("Merged array: " + string.Join(",", arrayThree));
             //------------------Remove Duplicates from an Array---------------
+            //Console.WriteLine("Enter N number: ");
+            //int n = int.Parse(Console.ReadLine());
+            //int[] num = new int[n];
+            //Console.WriteLine("Enter the number of array: ");
+            //for (int i = 0; i < num.Length; i++)
+            //{
+            //    num[i] = int.Parse(Console.ReadLine());
+            //}
+            //int[] uniqueArray = num.Distinct().ToArray();
+            //Console.WriteLine("Unique array: " + string.Join(",", uniqueArray));
+            //------------------Second Largest Number in an Array----------------
             Console.WriteLine("Enter N number: ");
             int n = int.Parse(Console.ReadLine());
             int[] num = new int[n];
@@ -633,8 +644,9 @@ namespace Part1Exs
             {
                 num[i] = int.Parse(Console.ReadLine());
             }
-            int[] uniqueArray = num.Distinct().ToArray();
-            Console.WriteLine("Unique array: " + string.Join(",", uniqueArray));
+            Array.Sort(num);
+            Console.WriteLine("Second largest number: " + num[num.Length - 2]);
+
 
 
 

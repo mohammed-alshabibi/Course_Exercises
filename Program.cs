@@ -165,7 +165,7 @@ namespace Part1Exs
             //}
 
             //----------------------------------------------------------
-            
+
             //--------------------------- Simple Calculator (Switch-Case) ----------------
             //Console.WriteLine("Enter the first number: ");
             //int num1 = int.Parse(Console.ReadLine());
@@ -203,121 +203,22 @@ namespace Part1Exs
 
 
             //-------------------------- Geometry Calculator-----------------------
-           
+
             //--------------------------Factorial of a Number -------------------------
-            
+
             //-------------------------- Sum of Even and Odd Numbers------------------
-            
+
             //--------------------------Scientific Calculator (Switch-Case & Math Functions)----------------
-           
+
             //-------------------------- Print Pattern (For Loop)-------------------
-            //Console.WriteLine("Enter number of N:");
-            //int n=int.Parse(Console.ReadLine());
-            //for (int i = 0; i <= n; i++) {
 
-            //    Console.WriteLine(new string('*', i));
-
-            //}
-            //for (int i = 0; i <= 5; i++)
-            //{
-            //    for (int j = 1; j <= i; j++)
-            //    {
-            //        Console.Write("*");
-            //    }
-            //    Console.WriteLine();
-            //}
             //--------------------------Print a Pyramid Pattern (For Loop)---------
-            //Console.WriteLine("Enter number of N:");
-            //int n = int.Parse(Console.ReadLine());
 
-            //for (int i = 1; i <= n; i++)
-            //{
-            //    for (int j = 0; j < n - i; j++)
-            //    {
-            //        Console.Write(" ");
-            //    }
-            //    Console.WriteLine(new string('*', i * 2 - 1));
-
-            //}
-            //for (int i = 0; i <= n; i++)
-            //{
-            //    for (int j = n-i; j >= 1; j--)
-            //    {
-            //        Console.Write(" ");
-            //    }
-            //    for (int j = 1; j <= i*2-1; j++)
-            //    {
-            //        Console.Write("*");
-            //    }
-            //    Console.WriteLine();
-            //}
             //--------------------------Print a Diamond Pattern (For Loop)---------------
-            Console.WriteLine("Enter number of N:");
-            int n = int.Parse(Console.ReadLine());
-            //for (int i = 1; i <= n; i++)
-            //{
-
-            //    Console.WriteLine(new string(' ', n-i) + new string('*', i * 2 - 1));
 
 
-            //}
-            //for (int i = n - 1; i >= 1; i--)
-            //{
-            //    Console.WriteLine(new string(' ', n - i) + new string('*', i * 2 - 1));
-            //}
-            int count = n * 2 - 1;
-            for (int i = 1; i <= count; i++)
-            {
-                //upper
-                if (i <= n)
-                {
-                    for (int j = 1; j <= i; j++)
-                    {
-                        Console.WriteLine(new string(' ', n - j) + new string('*', j * 2 - 1));
-                    }
-                }
-                else
-                {
-                    //lower
-                    for (int j = n - 1; j >= 1; j--)
-                    {
-                        Console.WriteLine(new string(' ', n - j) + new string('*', j * 2 - 1));
-                    }
-
-                }
-                Console.WriteLine();
-            }
             //----------------------------Guess Game with helper ---------------
-            //Random random = new Random();
-            //int randomNumber = random.Next(1, 100);
-
-            //int attempts = 0;
-            //bool correct = false;
-            //while (!correct)
-            //{
-            //    Console.WriteLine("Guess a number between 1 and 100: ");
-            //    int guess = int.Parse(Console.ReadLine());
-
-            //    if (randomNumber  <guess)
-            //    {
-            //        Console.WriteLine("try lower");
-
-            //        attempts++;
-
-
-            //    }
-            //    else if (randomNumber > guess)
-            //    {
-            //        Console.WriteLine("try higher");
-            //        attempts++;
-            //    }
-            //    else
-            //    {
-            //        Console.WriteLine("Correct! The number was " + randomNumber);
-            //        Console.WriteLine("It took you " + attempts + " attempts");
-            //        correct = true;
-            //    }
-            //}
+            
             //--------------------------Multiplication table( nested loop)----------------
             //for(int i=1; i <= 5; i++)
             //{
@@ -362,6 +263,7 @@ namespace Part1Exs
                     case 0: return;
                     default: Console.WriteLine("Invalid Choice! Try again."); break;
                 }
+                Console.Write("\nPress any key to continue...");
                 Console.ReadLine();
             }
 
@@ -581,6 +483,119 @@ namespace Part1Exs
                     break;
             }
         }
+
+        static void PrintTriangle()
+        {
+            Console.WriteLine("Enter number of N:");
+            int n = int.Parse(Console.ReadLine());
+            for (int i = 0; i <= n; i++)
+            {
+
+                Console.WriteLine(new string('*', i));
+
+            }
+            for (int i = 0; i <= 5; i++)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+        }
+
+        // 8. Print Pyramid Pattern
+        static void PrintPyramid()
+        {
+            Console.WriteLine("Enter number of N:");
+            int n = int.Parse(Console.ReadLine());
+
+            for (int i = 1; i <= n; i++)
+            {
+                for (int j = 0; j < n - i; j++)
+                {
+                    Console.Write(" ");
+                }
+                Console.WriteLine(new string('*', i * 2 - 1));
+
+            }
+            for (int i = 0; i <= n; i++)
+            {
+                for (int j = n - i; j >= 1; j--)
+                {
+                    Console.Write(" ");
+                }
+                for (int j = 1; j <= i * 2 - 1; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+        }
+
+        // 9. Print Diamond Pattern
+        static void PrintDiamond()
+        {
+            Console.WriteLine("Enter number of N:");
+            int n = int.Parse(Console.ReadLine());
+            for (int i = 1; i <= n; i++)
+            {
+
+                Console.WriteLine(new string(' ', n - i) + new string('*', i * 2 - 1));
+
+
+            }
+            for (int i = n - 1; i >= 1; i--)
+            {
+                Console.WriteLine(new string(' ', n - i) + new string('*', i * 2 - 1));
+            }
+
+
+
+        }
+
+        static void GuessGame()
+        {
+            Random random = new Random();
+            int randomNumber = random.Next(1, 100);
+
+            int attempts = 0;
+            bool correct = false;
+            while (!correct)
+            {
+                Console.WriteLine("Guess a number between 1 and 100: ");
+                int guess = int.Parse(Console.ReadLine());
+
+                if (randomNumber < guess)
+                {
+                    Console.WriteLine("try lower");
+
+                    attempts++;
+
+
+                }
+                else if (randomNumber > guess)
+                {
+                    Console.WriteLine("try higher");
+                    attempts++;
+                }
+                else
+                {
+                    Console.WriteLine("Correct! The number was " + randomNumber);
+                    Console.WriteLine("It took you " + attempts + " attempts");
+                    correct = true;
+                }
+            }
+        }
+
+
+        
+
+
+
+
+
+
     }
 
     

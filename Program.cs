@@ -530,37 +530,49 @@ namespace Part1Exs
             //Console.WriteLine("Max number "+num.Max()) ;
             // Console.WriteLine("Min number " + num.Min());
             //----------------Count Even & Odd Numbers----------
+            //Console.WriteLine("Enter N number: ");
+            //int n = int.Parse(Console.ReadLine());
+            //int[] num = new int[n];
+            //int countEven = 0;
+            //int countOdd = 0;
+            //int []EvenArray = new int[n];
+            //int []OddArray = new int[n];
+            //Console.WriteLine("Enter the number of array: ");
+            //for (int i = 0; i < num.Length; i++)
+            //{
+            //    num[i] = int.Parse(Console.ReadLine());
+            //}
+            //for (int i = 0; i < num.Length; i++)
+            //{
+            //    if (num[i] % 2 == 0)
+            //    {
+            //        EvenArray[countEven] = num[i];
+            //        countEven ++;
+
+            //    }
+            //    else
+            //    {
+            //        OddArray[countOdd] = num[i];
+            //        countOdd ++;
+            //    }
+            //}
+            //Console.WriteLine("count Even number: "+ countEven);
+            //Console.WriteLine("count Odd number: " + countOdd);
+            //Console.WriteLine("even number: " + string.Join(",", EvenArray));
+            //Console.WriteLine("odd number: " +string.Join(",",OddArray) );
+            //-----------------Reverse an Array----------------
             Console.WriteLine("Enter N number: ");
+
             int n = int.Parse(Console.ReadLine());
             int[] num = new int[n];
-            int countEven = 0;
-            int countOdd = 0;
-            int []EvenArray = new int[n];
-            int []OddArray = new int[n];
             Console.WriteLine("Enter the number of array: ");
             for (int i = 0; i < num.Length; i++)
             {
                 num[i] = int.Parse(Console.ReadLine());
             }
-            for (int i = 0; i < num.Length; i++)
-            {
-                if (num[i] % 2 == 0)
-                {
-                    EvenArray[countEven] = num[i];
-                    countEven ++;
+            Array.Reverse(num);
+            Console.WriteLine("Reverse array: " + string.Join(",", num));
 
-                }
-                else
-                {
-                    OddArray[countOdd] = num[i];
-                    countOdd ++;
-                }
-            }
-            Console.WriteLine("count Even number: "+ countEven);
-            Console.WriteLine("count Odd number: " + countOdd);
-            Console.WriteLine("even number: " + string.Join(",", EvenArray));
-            Console.WriteLine("odd number: " +string.Join(",",OddArray) );
-            //-----------------
 
 
 

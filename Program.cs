@@ -524,6 +524,7 @@ namespace Part1Exs
                     Console.WriteLine("7. Merging Two Arrays");
                     Console.WriteLine("8. Remove Duplicates from an Array");
                     Console.WriteLine("9. Second Largest Number in an Array");
+                    Console.WriteLine("10. Find the Most Frequent Number in an Array");
                     Console.WriteLine("0. Exit");
 
                     Console.Write("Enter your choice: ");
@@ -613,6 +614,7 @@ namespace Part1Exs
                             else
                             {
                                 Console.WriteLine("The number is not found in the array.");
+                                //Console.WriteLine(index);
                             }
                             break;
                         case 6:
@@ -678,6 +680,63 @@ namespace Part1Exs
                             }
                             Array.Sort(num8);
                             Console.WriteLine("Second largest number: " + num8[num8.Length - 2]);
+                            break;
+                        case 10:
+                            //Find the Most Frequent Number in an Array
+                            Console.WriteLine("Enter N number: ");
+                            int n6 = int.Parse(Console.ReadLine());
+                            int[] num9 = new int[n6];
+
+                            Console.WriteLine("Enter the numbers of the array: ");
+                            for (int i = 0; i < num9.Length; i++)
+                            {
+                                num9[i] = int.Parse(Console.ReadLine());
+                            }
+
+                            int minCount = int.MaxValue;
+                            int frequentNumber = 0;
+                            int[] frequentArray = new int[0];
+
+                            for (int i = 0; i < num9.Length; i++)
+                            {
+                                int count = 0;
+                                for (int j = 0; j < num9.Length; j++)
+                                {
+                                    if (i != j && num9[i] == num9[j])
+                                    {
+                                        count++;
+                                    }
+                                }
+
+                                if (count > 0 && count < minCount)
+                                {
+                                    minCount = count;
+                                    frequentNumber = num9[i];
+                                    frequentArray = new int[count + 1]; // +1 to include the original number
+                                    int index1 = 0;
+                                    for (int k = 0; k < num9.Length; k++)
+                                    {
+                                        if (num9[k] == frequentNumber)
+                                        {
+                                            frequentArray[index1++] = num9[k];
+                                        }
+                                    }
+                                }
+                            }
+
+                            Console.WriteLine("The smallest frequent number is: " + frequentNumber);
+                            Console.WriteLine("Duplicated values: " + string.Join(",", frequentArray));
+                            break;
+                        case 11:
+                            //Check if an Array is Palindrome
+                            Console.WriteLine("Enter N number: ");
+                            int n7 = int.Parse(Console.ReadLine());
+                            int[] num10 = new int[n7];
+                            Console.WriteLine("Enter the numbers of the array: ");
+                            for (int i = 0; i < num10.Length; i++)
+                            {
+                                num10[i] = int.Parse(Console.ReadLine());
+                            }
                             break;
                         case 0:
                             return;
